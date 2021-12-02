@@ -3,7 +3,9 @@
 const TOTAL = 100;
 // количество единиц товара в заказе
 let ordered = Number(prompt('Укажите количество единиц товара в заказе : '));
-if(ordered > TOTAL)
+if(ordered > TOTAL){
     console.log("На складе недостаточно товаров!");
-else
+}    
+else{
     console.log("Заказ оформлен, с вами свяжется менеджер");
+}

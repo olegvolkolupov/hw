@@ -6,12 +6,15 @@ let pricePerDroid = 3000;
 let totalPrice = 0;
 
 let amount = prompt('Укажите количество дроидов, которое желаете купить:');
-if(amount === null) //Escape
+//Escape
+if(amount === null) {
     console.log('Отменено пользователем!');
+}    
 else {
     totalPrice = Number(amount)*pricePerDroid;
-    if(totalPrice > credits)
+    if(totalPrice > credits){
         console.log('Недостаточно средств на счету!');
+    }
     else {
         let ost = credits - totalPrice;
         console.log(`Вы купили ${amount} дроидов, на счету осталось ${ost} кредитов.`);

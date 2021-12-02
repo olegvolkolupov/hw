@@ -6,13 +6,13 @@ while(true){
         alert(`Общая сумма чисел равна ${total}`);
         break;
     }
+    input = Number(input);
     //not number
-    // else if(typeof Number(input) === NaN) {
-    //     alert('Было введено не число, попробуйте еще раз');
-    // }
+    if(!Number.isInteger(input)) {
+        alert('Было введено не число, попробуйте еще раз');
+    }
     //number
     else{
-        total += Number(input);
+        total += input;
     }
 }
-

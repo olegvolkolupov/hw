@@ -1,10 +1,15 @@
 let message;
 const ADMIN_PASSWORD = 'adminpass';
 let password = prompt('Пароль:');
-if(password === null) //Escape
+//Escape
+if(password === null){ 
     message = 'Отменено пользователем!';
-else if(password === ADMIN_PASSWORD) // введён правильный пароль
+}    
+// введён правильный пароль
+else if(password === ADMIN_PASSWORD) {
     message = 'Добро пожаловать!';
-else
+}    
+else{
     message = 'Доступ запрещен, неверный пароль!';
+}    
 alert(message);
